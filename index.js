@@ -14,7 +14,7 @@ const server = http.createServer(app);
 
 const io = socketIo(server, {
     cors: {
-      origin: "https://wheelsapp.netlify.app/",
+      origin: "https://wheelsapp.netlify.app/*",
         // const noOriginHeader = req.headers.origin === undefined;
       methods: ["GET", "POST"]
     }
